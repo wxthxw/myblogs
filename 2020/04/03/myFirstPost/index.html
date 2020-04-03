@@ -7,14 +7,14 @@
   
   <title>myFirstPost | myBlogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一次使用hexo进行博客编写并进行测试">
+  <meta name="description" content="第一次使用hexo进行博客编写并进行测试使用过程 1 安装nodejs环境后，查看node版本 node -v   安装cnpm npm install cnpm -g –registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org   安装 Hexo  cnpm i -g hexo-cli 查看版本：hexo -v    创建本地博客 cd d:&#x2F;hexo&#x2F;blog hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="myFirstPost">
 <meta property="og:url" content="https://gitee.com/hxw1024/2020/04/03/myFirstPost/index.html">
 <meta property="og:site_name" content="myBlogs">
-<meta property="og:description" content="第一次使用hexo进行博客编写并进行测试">
+<meta property="og:description" content="第一次使用hexo进行博客编写并进行测试使用过程 1 安装nodejs环境后，查看node版本 node -v   安装cnpm npm install cnpm -g –registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org   安装 Hexo  cnpm i -g hexo-cli 查看版本：hexo -v    创建本地博客 cd d:&#x2F;hexo&#x2F;blog hexo">
 <meta property="article:published_time" content="2020-04-03T08:59:14.000Z">
-<meta property="article:modified_time" content="2020-04-03T08:59:59.583Z">
+<meta property="article:modified_time" content="2020-04-03T09:30:53.019Z">
 <meta property="article:author" content="hxw">
 <meta name="twitter:card" content="summary">
   
@@ -87,11 +87,91 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一次使用hexo进行博客编写并进行测试"><a href="#第一次使用hexo进行博客编写并进行测试" class="headerlink" title="第一次使用hexo进行博客编写并进行测试"></a>第一次使用hexo进行博客编写并进行测试</h1>
+        <h1 id="第一次使用hexo进行博客编写并进行测试"><a href="#第一次使用hexo进行博客编写并进行测试" class="headerlink" title="第一次使用hexo进行博客编写并进行测试"></a>第一次使用hexo进行博客编写并进行测试</h1><h2 id="使用过程"><a href="#使用过程" class="headerlink" title="使用过程"></a>使用过程</h2><ul>
+<li>1 安装nodejs环境后，查看node版本<ul>
+<li>node -v</li>
+</ul>
+</li>
+<li>安装cnpm<ul>
+<li>npm install cnpm -g –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></li>
+</ul>
+</li>
+<li>安装 Hexo <ul>
+<li>cnpm i -g hexo-cli</li>
+<li>查看版本：hexo -v </li>
+</ul>
+</li>
+<li>创建本地博客<ul>
+<li>cd d:/hexo/blog</li>
+<li>hexo init </li>
+<li>cnpm i</li>
+<li>hexo s // 打开环境</li>
+</ul>
+</li>
+<li>创建新的文章 <ul>
+<li>cd d:/hexo/blog</li>
+<li>hexo new “My First Post”</li>
+</ul>
+</li>
+<li>创建静态文件<ul>
+<li>hexo g</li>
+</ul>
+</li>
+<li>打开博客<ul>
+<li>浏览器输入localhost:4000 新文章已出现</li>
+</ul>
+</li>
+</ul>
+<h2 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h2><ul>
+<li>打开_config.yml文件<ul>
+<li>#Site下</li>
+</ul>
+<ul>
+<li>title: 博客名</li>
+<li>subtitle: ‘’</li>
+<li>description: ‘’ // 描述信息</li>
+<li>keywords:</li>
+<li>author: 你的姓名</li>
+<li>language: zh-Hans // 默认是en</li>
+<li>timezone: ‘’</li>
+</ul>
+<ul>
+<li>#URL下</li>
+</ul>
+<ul>
+<li>url: 网站名称</li>
+<li>root： 仓库名</li>
+</ul>
+<ul>
+<li>#Deployer下</li>
+</ul>
+<ul>
+<li>type: git</li>
+<li>repository: 仓库链接</li>
+<li>branch：分支名称</li>
+</ul>
+</li>
+<li>安装自动部署发布工具<ul>
+<li>cnpm i hexo-deployer-git -S</li>
+</ul>
+</li>
+<li>发布<ul>
+<li>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<ul>
+<li>首次发布需要输入账号和密码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>打开服务<ul>
+<li>进入gitee blog仓库的页面-&gt;服务-&gt;Gitee Pages-&gt;启动</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://gitee.com/hxw1024/2020/04/03/myFirstPost/" data-id="ck8jyzczu00003sqn4fk745m6" class="article-share-link">Share</a>
+      <a data-url="https://gitee.com/hxw1024/2020/04/03/myFirstPost/" data-id="ck8jznn020001u0qnf3qaaudp" class="article-share-link">Share</a>
       
       
     </footer>
